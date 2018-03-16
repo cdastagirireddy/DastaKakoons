@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kuncham.kakoons.BillingAddress">
+
+    <TextView
+        android:id="@+id/billing_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Billing Address"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/billing_activity"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="First Name *"/>
+    <EditText
+        android:id="@+id/first_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:layout_below="@id/first_name"/>
+
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name *"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/first_name_edit"/>
+    <EditText
+        android:id="@+id/last_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:layout_below="@id/last_name"/>
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/last_name_edit"/>
+    <EditText
+        android:id="@+id/company_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:layout_below="@id/company_name"/>
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country *"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/company_name_edit"/>
+    <EditText
+        android:id="@+id/country_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:layout_below="@id/country"/>
+
+    <TextView
+        android:id="@+id/street_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street Address *"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/country_edit"/>
+    <EditText
+        android:id="@+id/street_address_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="House Number and Street Name"
+        android:background="@drawable/rating"
+        android:layout_below="@id/street_address"/>
+    <EditText
+        android:id="@+id/street_address2_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Apartment,suite, unit etc. (Optional)"
+        android:background="@drawable/rating"
+        android:layout_below="@id/street_address_edit"/>
+
+    <TextView
+        android:id="@+id/town_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Town/ City *"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/street_address2_edit"/>
+    <EditText
+        android:id="@+id/town_city_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:layout_below="@id/town_city"/>
+
+    <TextView
+        android:id="@+id/state_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State/ City *"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/town_city_edit"/>
+    <EditText
+        android:id="@+id/state_country_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:layout_below="@id/state_country"/>
+
+    <TextView
+        android:id="@+id/postelcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postcode/ zip *"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/state_country_edit"/>
+    <EditText
+        android:id="@+id/postelcode_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:layout_below="@id/postelcode"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone *"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/postelcode_edit"/>
+    <EditText
+        android:id="@+id/phone_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:layout_below="@id/phone"/>
+
+    <TextView
+        android:id="@+id/email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email *"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/phone_edit"/>
+    <EditText
+        android:id="@+id/email_address_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:layout_below="@id/email_address"/>
+
+    <Button
+        android:id="@+id/save_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE ADDRESS"
+        android:layout_centerInParent="true"
+        android:background="#eee"
+        android:onClick="saveBillingAddress"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/email_address_edit"/>
+</RelativeLayout>
+</ScrollView>

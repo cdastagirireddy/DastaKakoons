@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your email address will not be published. Required fields are marked *"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:id="@+id/your_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/text_review"
+        android:text="Your Rating :"/>
+    <RatingBar
+        android:id="@+id/your_rating_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_review"
+        style="?android:ratingBarStyle"
+        android:layout_toRightOf="@id/your_rating"/>
+
+    <TextView
+        android:id="@+id/your_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/your_rating"
+        android:text="Your Review *"/>
+
+    <EditText
+        android:id="@+id/your_review_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_review"
+        android:background="@drawable/rating"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/your_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name *"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/your_review_edit"/>
+    <EditText
+        android:id="@+id/your_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        android:id="@+id/your_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email *"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/your_name_edit"/>
+    <EditText
+        android:id="@+id/your_email_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rating"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/submit_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="SUBMIT"
+        android:background="#eeeeee"
+        android:onClick="reviewSubmit"
+        android:layout_below="@id/your_email_edit"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit_review"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit_review"
+        android:layout_toRightOf="@id/checkbox"
+        android:layout_marginTop="5dp"
+        android:text="Notify me of new posts by email."/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv1"
+    android:layout_margin="10dp"
+    android:alwaysDrawnWithCache="false"
+    app:cardBackgroundColor="#8888f5"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_margin="1dp">
+
+        <ImageView
+            android:id="@+id/top_men_image"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/heading_mentop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:layout_toRightOf="@+id/top_men_image"
+            android:text="Pattu Saree" />
+
+        <TextView
+            android:id="@+id/description_mentop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="7"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/top_men_image"
+            android:layout_below="@+id/heading_mentop"
+            android:text="Description Pattu Saree" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

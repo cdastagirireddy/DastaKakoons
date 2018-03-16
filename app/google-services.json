@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1057809936111",
+    "project_id": "kakoons-192605"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057809936111:android:94a815709dfe4214",
+        "android_client_info": {
+          "package_name": "com.kuncham.kakoons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057809936111-qj31uruf248jmvi5evuabgs969utvd3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kuncham.kakoons",
+            "certificate_hash": "612c4e89ff0a1cc24b0b4d2a0301be3620902b44"
+          }
+        },
+        {
+          "client_id": "1057809936111-n24bp8gjhthp6egab88i3fu2ott0e3ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqsL78UEumg3O38lav_5QywotmfFdGKTo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

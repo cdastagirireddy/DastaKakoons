@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Kakoons</string>
+    <string name="facebook_app_id">871370243023347</string>
+    <string name="fb_login_protocol_scheme">fb871370243023347</string>
+    <string name="sign_out" />
+    <string name="desc_google_icon" />
+    <string name="signed_out" />
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>
